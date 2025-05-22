@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StudyMart Landing Page</title>
+  <style>
+    :root {
+      --primary: #6C63FF;
+      --secondary: #4ECDC4;
+      --background: #F7FFF7;
+      --text: #333333;
+      --footer: #3A3D98;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--background);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: var(--primary);
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--secondary);
+    }
+
+    .hero {
+      background: linear-gradient(to right, rgba(108, 99, 255, 0.9), rgba(78, 205, 196, 0.9)),
+        url('https://images.unsplash.com/photo-1584697964154-d8a2e8f85c96') no-repeat center center/cover;
+      padding: 5rem 2rem;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+      animation: slideDown 1s ease-out;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .sections {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 2rem;
+    }
+
+    .card {
+      background-color: white;
+      padding: 1.5rem;
+      margin: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: popUp 1s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 1rem;
+    }
+
+    .card h2 {
+      color: var(--primary);
+    }
+
+    footer {
+      background-color: var(--footer);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes popUp {
+      from { transform: scale(0.95); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to StudyMart</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Course</a>
+    <a href="#">Certification</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Build Your Future with Us</h1>
+    <p>You can learn everything from anywhere.</p>
+  </section>
+
+  <section class="sections">
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/teacher.png" alt="Teacher Icon">
+      <h2>Quality Teachers</h2>
+      <p>Learn from experienced, passionate educators dedicated to mentoring and guiding every student toward success.</p>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/open-book--v2.png" alt="Curriculum Icon">
+      <h2>Best Curriculum</h2>
+      <p>Our curriculum is industry-relevant, future-focused, and regularly updated to equip students with real-world skills.</p>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/globe--v2.png" alt="Global Icon">
+      <h2>Global Recognition</h2>
+      <p>Our programs are globally recognized, with alumni excelling worldwide and our credentials respected across industries.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 StudyMart. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
