@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    /* Reset & Base Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Header */
+    header {
+      background: #0077cc;
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    /* Sections */
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      color: #0077cc;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+
+    .profile-img {
+      width: 150px;
+      border-radius: 50%;
+      margin: 1rem auto;
+      display: block;
+      border: 4px solid #0077cc;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    /* Projects */
+    .project {
+      margin-bottom: 2rem;
+    }
+
+    .project img {
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+    }
+
+    .project h3 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    /* Resume */
+    #resume a {
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      background-color: #0077cc;
+      color: white;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+
+    #resume a:hover {
+      background-color: #005fa3;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #333;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Leesha patel</h1>
+    <p>Web Developer | PowerBI expert | Problem Solver</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="picture.jpg" alt="your photo" class="profile-img"/>
+    <p>Hello! I'm a passionate web developer with experience in HTML, CSS, and JavaScript. I love building clean and functional websites that solve real-world problems.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>powerBI</li>
+      <li>python</li>
+      <li>GitHub</li>
+      <li>MongoDB</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      
+      <h3>PowerBI dashboard</h3>
+      <p>Power BI project, where I leveraged data visualization to drive actionable insights. From raw data to interactive dashboards, this project showcases:
+✅ Dynamic visualizations for real-time decision-making
+ ✅ Advanced DAX calculations to uncover hidden trends
+ ✅ Data modeling techniques for efficiency and accuracy
+ ✅ User-friendly reports for enhanced business intelligence
+Power BI continues to be a game-changer in data analytics, empowering organizations to make data-driven decisions with confidence.</p>
+    </div>
+    <div class="project">
+   
+      <h3>Task manager</h3>
+      <p> YourTaskManage – a simple yet powerful task management app built using HTML, CSS, and JavaScript!
+✅ Stay organized
+ ✅ Manage your daily tasks efficiently
+ ✅ Clean & responsive UI</p>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <p><a href="Leesha R patel.pdf" download>Download My Resume (PDF)</a></p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:leeshapatel61@gmail.com">leeshapatel61@gmail.com</a></p>
+    <p>Phone: 6353594644</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 leesha patel. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
